@@ -1,5 +1,5 @@
 {% set name = "aws-c-mqtt" %}
-{% set version = "0.7.8" %}
+{% set version = "0.7.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/awslabs/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: bf5ed63706f3f1aed86a878462fac78e5f045dfc34567bfb86c38f8b9d9d51ef
+  sha256: 8556ae7c2b30ebb4ccb61becb120a848ea33315f7cf85436ebe5f21b75ab09c4
   patches:
     - 0001-Export-aws_mqtt_client_connection_reconnect-as-part-.patch
 
 build:
-  number: 10
+  number: 0
   run_exports:
     - {{ pin_subpackage("aws-c-mqtt", max_pin="x.x.x") }}
 
