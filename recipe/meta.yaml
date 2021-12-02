@@ -10,7 +10,7 @@ source:
   sha256: 8556ae7c2b30ebb4ccb61becb120a848ea33315f7cf85436ebe5f21b75ab09c4
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage("aws-c-mqtt", max_pin="x.x.x") }}
 
