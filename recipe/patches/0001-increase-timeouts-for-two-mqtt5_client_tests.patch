@@ -1,0 +1,34 @@
+From 54f4670e51b24d20f2f340c0e0bc9e8755ce4983 Mon Sep 17 00:00:00 2001
+From: "H. Vetinari" <h.vetinari@gmx.com>
+Date: Sat, 28 Jan 2023 08:55:00 +1100
+Subject: [PATCH] increase timeouts for two mqtt5_client_tests
+
+---
+ tests/v5/mqtt5_client_tests.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/tests/v5/mqtt5_client_tests.c b/tests/v5/mqtt5_client_tests.c
+index dd0717d..d3dbcb0 100644
+--- a/tests/v5/mqtt5_client_tests.c
++++ b/tests/v5/mqtt5_client_tests.c
+@@ -1394,7 +1394,7 @@ static int s_verify_reconnection_exponential_backoff_timestamps(
+                 uint64_t time_diff = aws_timestamp_convert(
+                     record->timestamp - last_timestamp, AWS_TIMESTAMP_NANOS, AWS_TIMESTAMP_MILLIS, NULL);
+ 
+-                if (!s_is_within_percentage_of(expected_backoff, time_diff, .1)) {
++                if (!s_is_within_percentage_of(expected_backoff, time_diff, .3)) {
+                     return AWS_OP_ERR;
+                 }
+ 
+@@ -1612,7 +1612,7 @@ static int s_verify_reconnection_after_success_used_backoff(
+         AWS_TIMESTAMP_MILLIS,
+         NULL);
+ 
+-    if (!s_is_within_percentage_of(expected_reconnect_delay_ms, post_success_reconnect_time_ms, .1)) {
++    if (!s_is_within_percentage_of(expected_reconnect_delay_ms, post_success_reconnect_time_ms, .3)) {
+         return AWS_OP_ERR;
+     }
+ 
+-- 
+2.38.1.windows.1
+

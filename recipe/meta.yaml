@@ -8,6 +8,9 @@ package:
 source:
   url: https://github.com/awslabs/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: f3ba475f52b9477fd9cfa06d69679e213fd0bed7a2fb16bd10845f0b5437655e
+  patches:
+    # see https://github.com/awslabs/aws-c-mqtt/issues/257
+    - patches/0001-increase-timeouts-for-two-mqtt5_client_tests.patch
 
 build:
   number: 0
