@@ -1,12 +1,11 @@
-{% set name = "aws-c-mqtt" %}
 {% set version = "0.8.6" %}
 
 package:
-  name: {{ name|lower }}
+  name: aws-c-mqtt
   version: {{ version }}
 
 source:
-  url: https://github.com/awslabs/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/awslabs/aws-c-mqtt/archive/v{{ version }}.tar.gz
   sha256: f3ba475f52b9477fd9cfa06d69679e213fd0bed7a2fb16bd10845f0b5437655e
   patches:
     # see https://github.com/awslabs/aws-c-mqtt/issues/257
