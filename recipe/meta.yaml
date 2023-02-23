@@ -12,7 +12,7 @@ source:
     - patches/0001-increase-timeouts-for-two-mqtt5_client_tests.patch
 
 build:
-  number: 4
+  number: 5
   run_exports:
     - {{ pin_subpackage("aws-c-mqtt", max_pin="x.x.x") }}
 
