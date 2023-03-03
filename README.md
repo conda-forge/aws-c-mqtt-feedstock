@@ -1,11 +1,11 @@
-About aws-c-mqtt
-================
+About aws-c-mqtt-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-c-mqtt-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/awslabs/aws-c-mqtt
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aws-c-mqtt-feedstock/blob/main/LICENSE.txt)
 
 Summary: C99 implementation of the MQTT 3.1.1 specification.
 
