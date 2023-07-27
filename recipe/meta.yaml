@@ -1,4 +1,4 @@
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 package:
   name: aws-c-mqtt
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-mqtt/archive/v{{ version }}.tar.gz
-  sha256: 8a1c6e4bd57bab01f394b3738af9e177ffc3683145985c68ae97535c6b947e58
+  sha256: df4fbcb0df829663984282234c57141f766723bbea09aa93e1672ff2f0c07f0a
 
 build:
   number: 0
