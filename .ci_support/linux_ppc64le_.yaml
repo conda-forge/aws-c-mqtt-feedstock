@@ -1,7 +1,7 @@
 aws_c_common:
 - 0.9.23
 aws_c_http:
-- 0.8.3
+- 0.8.4
 aws_c_io:
 - 0.14.11
 c_compiler:
