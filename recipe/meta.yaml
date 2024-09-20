@@ -1,4 +1,4 @@
-{% set version = "0.10.5" %}
+{% set version = "0.10.6" %}
 
 package:
   name: aws-c-mqtt
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-mqtt/archive/v{{ version }}.tar.gz
-  sha256: d231d14932150dcbf03d22c5d39808a49f4da8c05660c96dc23e9c7d39bb96b5
+  sha256: 7579fafc74a8751c15c0196eda6ec93d00a17e7f79fb994f34a8f62ceb66cc62
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage("aws-c-mqtt", max_pin="x.x.x") }}
 
