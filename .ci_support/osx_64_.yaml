@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 MACOSX_SDK_VERSION:
 - '10.13'
 aws_c_common:
-- 0.9.31
+- 0.10.0
 aws_c_http:
 - 0.9.0
 aws_c_io:
@@ -11,7 +11,7 @@ aws_c_io:
 c_compiler:
 - clang
 c_compiler_version:
-- '17'
+- '18'
 c_stdlib:
 - macosx_deployment_target
 c_stdlib_version:
