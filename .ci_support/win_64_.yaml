@@ -1,5 +1,5 @@
 aws_c_common:
-- 0.10.0
+- 0.10.3
 aws_c_http:
 - 0.9.1
 aws_c_io:
