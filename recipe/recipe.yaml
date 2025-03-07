@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-mqtt/archive/v${{ version }}.tar.gz
-  sha256: 3854664c13896b6de3d56412f928435a4933259cb7fe62b10c1f497e6999333c
+  sha256: 5707e8ddb536bc6dfc65fb16e4db8f3b9510aa187a8c5b5d59824f8a9ead7a63
 
 build:
   number: 0
