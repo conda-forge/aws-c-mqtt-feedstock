@@ -3,9 +3,9 @@ aws_c_common:
 aws_c_http:
 - 0.10.2
 aws_c_io:
-- 0.20.0
+- 0.20.1
 c_compiler:
-- vs2019
+- vs2022
 c_stdlib:
 - vs
 channel_sources:
