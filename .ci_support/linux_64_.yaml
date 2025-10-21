@@ -1,9 +1,9 @@
 aws_c_common:
-- 0.12.4
+- 0.12.5
 aws_c_http:
-- 0.10.4
+- 0.10.5
 aws_c_io:
-- 0.22.0
+- 0.23.0
 c_compiler:
 - gcc
 c_compiler_version:
@@ -12,8 +12,6 @@ c_stdlib:
 - sysroot
 c_stdlib_version:
 - '2.17'
-cdt_name:
-- conda
 channel_sources:
 - conda-forge
 channel_targets:
