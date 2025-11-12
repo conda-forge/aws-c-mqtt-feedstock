@@ -12,7 +12,7 @@ source:
   sha256: 1dfc11d6b3dc1a6d408df64073e8238739b4c50374078d36d3f2d30491d15527
 
 build:
-  number: 9
+  number: 10
 
 requirements:
   build:
@@ -42,6 +42,7 @@ about:
   license_file: LICENSE
   summary: C99 implementation of the MQTT 3.1.1 specification.
   homepage: https://github.com/awslabs/aws-c-mqtt
+  repository: https://github.com/awslabs/aws-c-mqtt
 
 extra:
   recipe-maintainers:
