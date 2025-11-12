@@ -9,6 +9,8 @@ Package license: Apache-2.0
 
 Summary: C99 implementation of the MQTT 3.1.1 specification.
 
+Development: https://github.com/awslabs/aws-c-mqtt
+
 Current build status
 ====================
 
