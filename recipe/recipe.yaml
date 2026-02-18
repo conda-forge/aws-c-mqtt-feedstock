@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.13.5"
+  version: "0.14.0"
 
 package:
   name: aws-c-mqtt
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-mqtt/archive/v${{ version }}.tar.gz
-  sha256: a68be4ce4d58ea1c7acb3ebf696692dc034107fe10ade3167e48649a317952c2
+  sha256: d7b881f3154a4d7282aca1aab9926b2ff9a67de3a07b2eee3c229629520e492d
 
 build:
   number: 0
