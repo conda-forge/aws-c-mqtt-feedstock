@@ -5,7 +5,7 @@
 
 [workspace]
 name = "aws-c-mqtt-feedstock"
-version = "3.56.3"  # conda-smithy version used to generate this file
+version = "3.57.0"  # conda-smithy version used to generate this file
 description = "Pixi configuration for conda-forge/aws-c-mqtt-feedstock"
 authors = ["@conda-forge/aws-c-mqtt"]
 channels = ["conda-forge"]
