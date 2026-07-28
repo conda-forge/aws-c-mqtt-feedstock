@@ -1,9 +1,9 @@
 aws_c_common:
-- 0.14.2
+- 0.14.3
 aws_c_http:
 - 0.11.0
 aws_c_io:
-- 0.27.3
+- 0.27.5
 c_compiler:
 - vs2022
 c_stdlib:
