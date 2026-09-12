@@ -12,7 +12,7 @@ source:
   sha256: 0a4da233f2532203b245d2459e4b12c9e556fee5ed2c92185d5e3f1dd4289c8c
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -37,6 +37,22 @@ tests:
         then:
           - if not exist %LIBRARY_INC%\\aws\\mqtt\\mqtt.h exit 1
           - if not exist %PREFIX%\\Library\\bin\\aws-c-mqtt.dll exit 1
+  - if: win and arm64
+    then:
+      requirements:
+        run:
+          - ${{ compiler('c') }}
+          - cmake
+      files:
+        recipe:
+          - CMakeLists.txt
+          - consumer.c
+      script:
+        - cmake -S . -B consumer-build -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="%LIBRARY_PREFIX%"
+        - cmake --build consumer-build
+        - consumer-build\consumer.exe
+        - dumpbin /headers "%LIBRARY_BIN%\aws-c-mqtt.dll" | findstr /I /C:"AA64 machine (ARM64)"
+        - dumpbin /headers consumer-build\consumer.exe | findstr /I /C:"AA64 machine (ARM64)"
 about:
   license: Apache-2.0
   license_file: LICENSE
@@ -45,6 +61,7 @@ about:
   repository: https://github.com/awslabs/aws-c-mqtt
 
 extra:
+  feedstock-name: aws-c-mqtt
   recipe-maintainers:
     - xhochy
     - conda-forge/aws-sdk-cpp
