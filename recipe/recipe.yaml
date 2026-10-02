@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.16.2"
+  version: "1.0.0"
 
 package:
   name: aws-c-mqtt
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/awslabs/aws-c-mqtt/archive/v${{ version }}.tar.gz
-  sha256: 0a4da233f2532203b245d2459e4b12c9e556fee5ed2c92185d5e3f1dd4289c8c
+  sha256: 28d9d9edd5f643b5a8db4e4f116c09d0781fd3715341ad3b039da3233a3d7b12
 
 build:
   number: 1
@@ -25,7 +25,7 @@ requirements:
     - aws-c-io
     - aws-c-http
   run_exports:
-    - ${{ pin_subpackage("aws-c-mqtt", upper_bound="x.x.x") }}
+    - ${{ pin_subpackage("aws-c-mqtt", upper_bound="x.x") }}
 
 tests:
   - script:
